@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet" />
+  <meta name="bingbot" content="noindex, nofollow" />
+  <meta name="yandex" content="none" />
+  <title>الصفحة الأولى</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+
+    * {
+      box-sizing: border-box;
+      font-family: "Readex Pro", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: #1f1f1f;
+    }
+
+    .page {
+      width: min(100%, 920px);
+      margin: 0 auto;
+      padding: 18px 12px 28px;
+    }
+
+    .hero {
+      display: block;
+      width: min(100%, 620px);
+      margin: 0 auto 20px;
+      text-decoration: none;
+    }
+
+    .hero img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .catalog,
+    .bottom-strip,
+    .third-strip,
+    .fourth-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .bottom-strip,
+    .third-strip,
+    .fourth-strip {
+      margin-top: 22px;
+      padding-top: 10px;
+      border-top: 1px solid #8f8f8f;
+    }
+
+    .product {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      text-align: center;
+    }
+
+    .thumb {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .thumb img {
+      max-width: 100%;
+      max-height: 150px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .name {
+      font-size: 14px;
+      line-height: 1.5;
+      min-height: 42px;
+      margin-bottom: 4px;
+      text-align: right;
+    }
+
+    .old-price {
+      font-size: 13px;
+      color: #595959;
+      text-decoration: line-through;
+      margin-bottom: 2px;
+      text-align: right;
+    }
+
+    .new-price {
+      font-size: 15px;
+      color: #4f4f4f;
+      margin-bottom: 10px;
+      text-align: right;
+    }
+
+    .qty {
+      height: 38px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border: 2px solid #7d7d7d;
+      margin-bottom: 10px;
+      background: #fff;
+    }
+
+    .qty span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: #4b4b4b;
+      border-left: 2px solid #7d7d7d;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .qty span:last-child {
+      border-left: 0;
+    }
+
+    .qty .count {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .add {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 40px;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #ff5b5b 0%, #ff4343 100%);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 860px) {
+      .catalog,
+      .bottom-strip,
+      .third-strip,
+      .fourth-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 12px 6px 24px;
+      }
+
+      .hero {
+        margin-bottom: 16px;
+      }
+
+      .catalog,
+      .bottom-strip,
+      .third-strip,
+      .fourth-strip {
+        gap: 10px;
+      }
+
+      .thumb {
+        height: 112px;
+      }
+
+      .thumb img {
+        max-height: 112px;
+      }
+
+      .name {
+        font-size: 12px;
+        min-height: 34px;
+      }
+
+      .old-price,
+      .new-price {
+        font-size: 12px;
+      }
+
+      .qty {
+        height: 34px;
+      }
+
+      .qty span {
+        font-size: 18px;
+      }
+
+      .qty .count {
+        font-size: 14px;
+      }
+
+      .add {
+        width: 110px;
+        height: 36px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="hero" href="address.html">
+      <img src="assets/photos/home-logo.png" alt="دواجن الوطنية" />
+    </a>
+
+    <section class="catalog">
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/fresh-chicken-900.png" alt="دجاج طازج 800 غ" /></div>
+        <div class="name">دجاج طازج 800 غ</div>
+        <div class="old-price">14.20 ر.س</div>
+        <div class="new-price">7.10 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/fresh-chicken-900.png" alt="دجاج طازج 900 غ" /></div>
+        <div class="name">دجاج طازج 900 غ</div>
+        <div class="old-price">15.50 ر.س</div>
+        <div class="new-price">7.75 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/fresh-chicken-900.png" alt="دجاج طازج 1000 غ" /></div>
+        <div class="name">دجاج طازج 1000 غ</div>
+        <div class="old-price">16.50 ر.س</div>
+        <div class="new-price">8.25 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/fresh-chicken-900.png" alt="دجاج طازج 1100 غ" /></div>
+        <div class="name">دجاج طازج 1100 غ</div>
+        <div class="old-price">17.00 ر.س</div>
+        <div class="new-price">8.50 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+    </section>
+
+    <section class="bottom-strip">
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/chicken-drumsticks.png" alt="فيليه صدور دجاج" /></div>
+        <div class="name">فيليه صدور دجاج</div>
+        <div class="old-price">12.20 ر.س</div>
+        <div class="new-price">6.10 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/chicken-drumsticks.png" alt="صدور دجاج بعظم وجلد" /></div>
+        <div class="name">صدور دجاج بعظم وجلد</div>
+        <div class="old-price">13.10 ر.س</div>
+        <div class="new-price">6.55 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/chicken-drumsticks.png" alt="أرجل دجاج كاملة" /></div>
+        <div class="name">أرجل دجاج كاملة</div>
+        <div class="old-price">10.20 ر.س</div>
+        <div class="new-price">5.10 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/chicken-drumsticks.png" alt="سيقان دجاج" /></div>
+        <div class="name">سيقان دجاج</div>
+        <div class="old-price">10.20 ر.س</div>
+        <div class="new-price">5.10 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+    </section>
+
+    <section class="third-strip">
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/marinated-whole-chicken.avif" alt="دجاجة كاملة متبلة حار 600 غ" /></div>
+        <div class="name">دجاجة كاملة متبلة حار 600 غ</div>
+        <div class="old-price">14.00 ر.س</div>
+        <div class="new-price">7.00 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/marinated-whole-chicken.avif" alt="دجاجة كاملة متبلة حار 600 غ" /></div>
+        <div class="name">دجاجة كاملة متبلة حار 600 غ</div>
+        <div class="old-price">14.00 ر.س</div>
+        <div class="new-price">7.00 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/marinated-whole-chicken.avif" alt="دجاجة كاملة متبلة حار 600 غ" /></div>
+        <div class="name">دجاجة كاملة متبلة حار 600 غ</div>
+        <div class="old-price">14.00 ر.س</div>
+        <div class="new-price">7.00 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/marinated-whole-chicken.avif" alt="دجاجة كاملة متبلة حار 600 غ" /></div>
+        <div class="name">دجاجة كاملة متبلة حار 600 غ</div>
+        <div class="old-price">14.00 ر.س</div>
+        <div class="new-price">7.00 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+    </section>
+
+    <section class="fourth-strip">
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/mortadella-red.avif" alt="مرتديلا دجاج فلفل أحمر" /></div>
+        <div class="name">مرتديلا دجاج فلفل أحمر</div>
+        <div class="old-price">12.80 ر.س</div>
+        <div class="new-price">6.40 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/mortadella-black.avif" alt="مرتديلا دجاج فلفل أسود" /></div>
+        <div class="name">مرتديلا دجاج فلفل أسود</div>
+        <div class="old-price">12.80 ر.س</div>
+        <div class="new-price">6.40 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/franks-veggies.avif" alt="فرانك خضار 375 غ" /></div>
+        <div class="name">فرانك خضار 375 غ</div>
+        <div class="old-price">11.60 ر.س</div>
+        <div class="new-price">5.80 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+      <a class="product" href="address.html">
+        <div class="thumb"><img src="assets/photos/franks-classic.avif" alt="فرانك دجاج 350 غ" /></div>
+        <div class="name">فرانك دجاج 350 غ</div>
+        <div class="old-price">11.20 ر.س</div>
+        <div class="new-price">5.60 ر.س</div>
+        <div class="qty"><span class="minus">−</span><span class="count">1</span><span class="plus">+</span></div>
+        <div class="add">اطلب الآن</div>
+      </a>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll(".qty").forEach((qty) => {
+      const minus = qty.querySelector(".minus");
+      const plus = qty.querySelector(".plus");
+      const count = qty.querySelector(".count");
+
+      function getCount() {
+        return parseInt(count.textContent, 10) || 1;
+      }
+
+      minus.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        count.textContent = String(Math.max(1, getCount() - 1));
+      });
+
+      plus.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        count.textContent = String(getCount() + 1);
+      });
+    });
+  </script>
+</body>
+</html>
